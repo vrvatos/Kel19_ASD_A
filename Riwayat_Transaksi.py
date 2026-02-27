@@ -106,5 +106,5 @@ def main():
             print("Sistem Berhenti. Data Anda aman di 'riwayat_transaksi.txt'")
             break
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
