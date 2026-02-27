@@ -1,26 +1,28 @@
+#============================================================
+# Tampilan setelah Aplikasi Riwayat Keuangan
+#============================================================
 def menu_tampilan(): #menampilkan riwayat transaksi
     while True: 
         print("\n=== TAMPILKAN RIWAYAT TRANSAKSI ===")
         print("1. Tampilkan Semua Transaksi")
-        print("2. Tampilkan Transaksi Berdasarkan Jenis")
-        print("3. Tampilkan Urutan Berdasarkan Tanggal")
-        print("4. Tampilkan Urutan Berdasarkan Nominal")
+        print("2. Tampilkan Transaksi Berdasarkan Jenis") #jenis tarik/transfer
+        print("3. Tampilkan Urutan Berdasarkan Tanggal") 
+        print("4. Tampilkan Urutan Berdasarkan Nominal") 
         print("5. Kembali ke Menu Utama")
         pilih = input("Pilih opsi (1-5): ").strip()
 
-        if pilih == '1':
-            
-        elif pilih == '2':
-            
+        if pilih == "1":
+        elif pilih == "2":
         elif pilih == '3':
-            
         elif pilih == '4':
-
         elif pilih == '5':
             break
         else:
             print("Opsi tidak valid. Silakan pilih antara 1-5.")    
 
+#=============================================================
+# Tampilan Utama
+#=============================================================
 def main():
     while True:
         print("\n=== APLIKASI RIWAYAT KEUANGAN ===")
