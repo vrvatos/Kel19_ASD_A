@@ -1,6 +1,3 @@
-#============================================================
-# Tampilan setelah Aplikasi Riwayat Keuangan
-#============================================================
 def menu_tampilan(): #menampilkan riwayat transaksi
     while True: 
         print("\n=== TAMPILKAN RIWAYAT TRANSAKSI ===")
@@ -10,19 +7,21 @@ def menu_tampilan(): #menampilkan riwayat transaksi
         print("4. Tampilkan Urutan Berdasarkan Nominal") 
         print("5. Kembali ke Menu Utama")
         pilih = input("Pilih opsi (1-5): ").strip()
+        data = baca_transaksi()
 
-        if pilih == "1":
-        elif pilih == "2":
+        if pilih == '1':
+            
+        elif pilih == '2':
+            
         elif pilih == '3':
+            
         elif pilih == '4':
+
         elif pilih == '5':
             break
         else:
-            print("Opsi tidak valid. Silakan pilih antara 1-5.")    
+            print("Opsi tidak valid. Silakan pilih antara 1-5.") 
 
-#=============================================================
-# Tampilan Utama
-#=============================================================
 def main():
     while True:
         print("\n=== APLIKASI RIWAYAT KEUANGAN ===")
@@ -32,12 +31,15 @@ def main():
         print("4. Keluar")
         
         pilihan = input("Pilih Menu: ")
-        if pilihan == '1': tambah_transaksi()
-        elif pilihan == '2': menu_tampilkan()
-        elif pilihan == '3':
+        if pilihan == '1':
+            tambah_transaksi()
+        elif pilihan == '2': 
+            menu_tampilan()
+        elif pilihan == '3': 
+            cek_saldo()
         elif pilihan == '4':
             print("Sistem Berhenti. Data Anda aman di 'riwayat_transaksi.txt'")
             break
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
